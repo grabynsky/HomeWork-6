@@ -1,0 +1,17 @@
+@media screen and (max-width: 992px) {
+    .container {
+        grid-template-rows: 10vh 30vh 50vh 10vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "nav nav nav nav"
+        "banner banner banner banner"
+        "article1 article2 article3 article4"
+        "footer footer footer footer";
+    }
+    .article1 span,
+    .article2 span,
+    .article3 span,
+    .article4 span {
+        transform: rotate(-90deg) translate(75%,50%);
+    }
+}
