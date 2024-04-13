@@ -1,0 +1,55 @@
+section {
+    background-color: #D9D9D9;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "section-a section-a section-a section-a"
+        "section-b section-b section-b section-f"
+        "section-c section-d section-e section-f";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+}
+
+.section-a {
+    grid-area: section-a;
+}
+
+.section-b {
+    grid-area: section-b;
+}
+
+.section-c {
+    grid-area: section-c;
+}
+
+.section-d {
+    grid-area: section-d;
+}
+
+.section-f {
+    grid-area: section-f;
+}
+
+.section-e {
+    grid-area: section-e;
+}
+
+.section-a,
+.section-b,
+.section-c,
+.section-d,
+.section-e,
+.section-f {
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #383838;
+}
