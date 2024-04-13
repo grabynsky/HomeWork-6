@@ -1,0 +1,20 @@
+@media screen and (max-width: 800px) {
+    body {
+        margin: 8px;
+    }
+
+    .container {
+        grid-template-areas:
+            "section-a"
+            "section-b"
+            "section-c";
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .section-a,
+    .section-b,
+    .section-c {
+        border-radius: 10px;
+    }
+}
