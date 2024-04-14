@@ -1,0 +1,25 @@
+@media screen and (max-width: 992px) {
+    .article {
+        flex-wrap: nowrap;
+        column-gap: 1em
+    }
+
+    .article1,
+    .article2,
+    .article3,
+    .article4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1em;
+        padding-right: 0;
+        padding-bottom: 2em;
+    }
+
+    .article1 span,
+    .article2 span,
+    .article3 span,
+    .article4 span {
+        transform: rotate(-90deg);
+    }
+}
